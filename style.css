@@ -1,0 +1,47 @@
+:root {
+    /*Text*/
+/*- Very dark desaturated blue: hsl(238, 29%, 16%)
+- Soft red: hsl(14, 88%, 65%)
+*/
+/*Gradient */
+--softViolet:hsl(273, 75%, 66%);
+--softBlue:hsl(240, 73%, 65%);
+/*
+- Soft violet: hsl(273, 75%, 66%)
+- Soft blue: hsl(240, 73%, 65%)
+
+*/
+
+/* Text */
+
+/* - Very dark grayish blue: hsl(237, 12%, 33%)
+- Dark grayish blue: hsl(240, 6%, 50%) */
+/* 
+Dividers */
+
+/* - Light grayish blue: hsl(240, 5%, 91%) */
+
+/* Font */
+
+/* - Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700 */
+
+
+}
+* {
+    margin: 0 ;
+    padding: 0;
+}
+
+body {
+    font-size: 12px;
+    font-family: 'Kumbh Sans', sans-serif;
+    background: linear-gradient(var(--softViolet), var(--softBlue));
+    height: 100vh;
+}
+
+#faq {
+    background-color: white;
+    margin:140px 15px 0;
+    border-radius: 20px;
+}
