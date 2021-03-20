@@ -1,0 +1,25 @@
+#faq {
+    background-color: white;
+    margin:140px 15px 0;
+    border-radius: 20px;
+    padding: 60px 25px 40px;
+    position:relative;
+    .logo{
+       
+        img.front {
+            position: absolute;
+            top: -38%;
+            left: 33%;
+        }
+        img.back{
+            position: absolute;
+            top: 0%;
+            left: 36%;
+        }
+    }
+    .faq__header {
+        margin-top: 100px;
+        font-size: 40px;
+        text-align: center;
+    }
+}
