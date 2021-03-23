@@ -12,6 +12,7 @@ const changeButton = ({
     if (activeArticle.classList.contains("faq__hide-question--active")) {
         activeButton.textContent = "-";
         prevArticle.style.fontWeight = 700;
+        prevArticle.style.color = 'hsl(238, 29%, 16%)';
     } else {
         activeButton.textContent = "+";
         prevArticle.style.fontWeight = 'normal'
