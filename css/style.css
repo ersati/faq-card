@@ -34,7 +34,7 @@ body {
           box-shadow: 0px 15px 35px 5px var(--darkGrey);
 }
 
-#faq .logo img.front {
+#faq .logo img.front-mobile {
   position: absolute;
   top: -25%;
   left: 0;
@@ -43,13 +43,21 @@ body {
   margin-right: auto;
 }
 
-#faq .logo img.back {
+#faq .logo img.back-mobile {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
+}
+
+#faq .logo img.front-desktop {
+  display: none;
+}
+
+#faq .logo img.back-desktop {
+  display: none;
 }
 
 #faq .faq__header {
