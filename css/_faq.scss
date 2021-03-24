@@ -8,7 +8,7 @@
     box-shadow: 0px 15px 35px 5px var(--darkGrey);
     .logo{
        
-        img.front {
+        img.front-mobile {
             position: absolute;
             top: -25%;
             left: 0;
@@ -17,7 +17,7 @@
 margin-right: auto;
             // transform: translate(25%, -80%);
         }
-        img.back{
+        img.back-mobile{
             position: absolute;
             top: 0;
             left:0;
@@ -26,6 +26,12 @@ margin-right: auto;
 margin-right: auto;
             // transform: translate(40%, -240%);
             // z-index:  -1;
+        }
+        img.front-desktop{
+            display: none;
+        }
+        img.back-desktop {
+            display: none;
         }
     }
     .faq__header {
