@@ -1,12 +1,21 @@
 img.box {
     display: none;
-    @media only screen and (min-width:1100px){
+
+    @media only screen and (min-width:1100px) {
         display: block;
         position: absolute;
         transform: translate(26%, 118%);
         z-index: 1;
+    }
+
+    @media only screen and (min-width:1600px) {
+        display: block;
+        position: absolute;
+        transform: translate(60%, 118%);
+        z-index: 1;
+    }
 }
-}
+
 #faq {
     background-color: white;
     margin: 250px 15px 0;
@@ -15,31 +24,35 @@ img.box {
     // position: relative;
     box-shadow: 0px 15px 35px 5px var(--darkGrey);
     display: block;
-    @media only screen and (min-width:1100px){
+
+    @media only screen and (min-width:1100px) {
         display: flex;
         flex-direction: row;
         width: 70vw;
-    margin: 20% auto;
-    overflow: hidden;
+        margin: 20% auto;
+        overflow: hidden;
     }
 
     .logo {
         position: relative;
         height: 40px;
-        @media only screen and (min-width:1100px){
+
+        @media only screen and (min-width:1100px) {
             flex-basis: 50%;
             height: 400px;
         }
+
         img.front-mobile {
             display: block;
             position: absolute;
-            top: -25%;
+            top: -325%;
             left: 0;
             right: 0;
             margin-left: auto;
             margin-right: auto;
+
             // transform: translate(25%, -80%);
-            @media only screen and (min-width:1100px){
+            @media only screen and (min-width:1100px) {
                 display: none;
             }
         }
@@ -47,20 +60,22 @@ img.box {
         img.back-mobile {
             display: block;
             position: absolute;
-            top: 0;
+            top: -15px;
             left: 0;
             right: 0;
             margin-left: auto;
             margin-right: auto;
+
             // transform: translate(40%, -240%);
-            @media only screen and (min-width:1100px){
+            @media only screen and (min-width:1100px) {
                 display: none;
             }
         }
 
         img.front-desktop {
             display: none;
-            @media only screen and (min-width:1100px){
+
+            @media only screen and (min-width:1100px) {
                 display: block;
                 position: absolute;
                 top: 15%;
@@ -76,7 +91,8 @@ img.box {
 
         img.back-desktop {
             display: none;
-            @media only screen and (min-width:1100px){
+
+            @media only screen and (min-width:1100px) {
                 display: block;
                 position: absolute;
                 top: -78%;
@@ -88,53 +104,62 @@ img.box {
                 margin-bottom: auto;
             }
         }
-        
-    }
-.faq__wrapper{
 
-    @media only screen and (min-width:1100px){
-        flex-basis: 50%;
-    }
-    .faq__header {
-        margin-top: 100px;
-        font-size: 40px;
-        text-align: center;
     }
 
-    .faq__questions {
-        margin-top: 40px;
+    .faq__wrapper {
 
-        .faq__question-wrapper {
-            border-bottom: 1px solid var(--lightGrey);
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
+        @media only screen and (min-width:1100px) {
+            flex-basis: 50%;
+        }
 
-            .faq__question {
-                padding: 15px 10px 15px 0;
-            }
+        .faq__header {
+            margin-top: 100px;
+            font-size: 40px;
+            text-align: center;
+        }
 
-            .faq__question__button {
-                display: inline-block;
-                background-color: transparent;
-                border: none;
-                color: var(--softRed)
-            }
+        .faq__questions {
+            margin-top: 40px;
 
-            .faq__hide-question {
-                display: none;
-                flex-basis: 100%;
-                padding: 10px 10px 10px 0;
-                color: var(--grey);
-                line-height: 2;
-            }
+            .faq__question-wrapper {
+                border-bottom: 1px solid var(--lightGrey);
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
 
-            .faq__hide-question--active {
-                display: block;
+                .faq__question {
+                    padding: 15px 10px 15px 0;
+                    color: black;
+                    transition: .3s;
+                    cursor: pointer;
+                }
 
+                .faq__question:hover {
+                    color: var(--softRed);
+                }
+
+                .faq__question__button {
+                    display: inline-block;
+                    background-color: transparent;
+                    border: none;
+                    color: var(--softRed)
+                }
+
+                .faq__hide-question {
+                    display: none;
+                    flex-basis: 100%;
+                    padding: 10px 10px 10px 0;
+                    color: var(--grey);
+                    line-height: 2;
+                }
+
+                .faq__hide-question--active {
+                    display: block;
+
+                }
             }
         }
+
     }
 }
-}
-
