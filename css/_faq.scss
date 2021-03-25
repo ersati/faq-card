@@ -1,73 +1,140 @@
+img.box {
+    display: none;
+    @media only screen and (min-width:1100px){
+        display: block;
+        position: absolute;
+        transform: translate(26%, 118%);
+        z-index: 1;
+}
+}
 #faq {
-    background-color: white
-    ;
-    margin:250px 15px 0;
+    background-color: white;
+    margin: 250px 15px 0;
     border-radius: 20px;
     padding: 20px 25px 40px;
-    position:relative;
+    // position: relative;
     box-shadow: 0px 15px 35px 5px var(--darkGrey);
-    .logo{
-       
+    display: block;
+    @media only screen and (min-width:1100px){
+        display: flex;
+        flex-direction: row;
+        width: 70vw;
+    margin: 20% auto;
+    overflow: hidden;
+    }
+
+    .logo {
+        position: relative;
+        height: 40px;
+        @media only screen and (min-width:1100px){
+            flex-basis: 50%;
+            height: 400px;
+        }
         img.front-mobile {
+            display: block;
             position: absolute;
             top: -25%;
             left: 0;
             right: 0;
             margin-left: auto;
-margin-right: auto;
+            margin-right: auto;
             // transform: translate(25%, -80%);
+            @media only screen and (min-width:1100px){
+                display: none;
+            }
         }
-        img.back-mobile{
+
+        img.back-mobile {
+            display: block;
             position: absolute;
             top: 0;
-            left:0;
+            left: 0;
             right: 0;
             margin-left: auto;
-margin-right: auto;
+            margin-right: auto;
             // transform: translate(40%, -240%);
-           
+            @media only screen and (min-width:1100px){
+                display: none;
+            }
         }
-        img.front-desktop{
+
+        img.front-desktop {
             display: none;
+            @media only screen and (min-width:1100px){
+                display: block;
+                position: absolute;
+                top: 15%;
+                left: -25%;
+                /* right: 375px; */
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: auto;
+                margin-bottom: auto;
+                //  transform: translate(40%, -240%);
+            }
         }
+
         img.back-desktop {
             display: none;
+            @media only screen and (min-width:1100px){
+                display: block;
+                position: absolute;
+                top: -78%;
+                left: -160%;
+                right: 0;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: auto;
+                margin-bottom: auto;
+            }
         }
+        
+    }
+.faq__wrapper{
+
+    @media only screen and (min-width:1100px){
+        flex-basis: 50%;
     }
     .faq__header {
-       margin-top: 100px;
+        margin-top: 100px;
         font-size: 40px;
         text-align: center;
     }
-    .faq__questions{
-        margin-top:40px;
-        .faq__question-wrapper{
+
+    .faq__questions {
+        margin-top: 40px;
+
+        .faq__question-wrapper {
             border-bottom: 1px solid var(--lightGrey);
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            .faq__question{
+
+            .faq__question {
                 padding: 15px 10px 15px 0;
             }
 
-            .faq__question__button{
+            .faq__question__button {
                 display: inline-block;
                 background-color: transparent;
                 border: none;
                 color: var(--softRed)
-
             }
-            .faq__hide-question{
+
+            .faq__hide-question {
                 display: none;
                 flex-basis: 100%;
                 padding: 10px 10px 10px 0;
                 color: var(--grey);
                 line-height: 2;
             }
-            .faq__hide-question--active{
+
+            .faq__hide-question--active {
                 display: block;
-                
+
             }
         }
     }
 }
+}
+
