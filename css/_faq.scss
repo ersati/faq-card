@@ -6,6 +6,7 @@ img.box {
         position: absolute;
         transform: translate(26%, 118%);
         z-index: 1;
+        transition: .3;
     }
 
     @media only screen and (min-width:1600px) {

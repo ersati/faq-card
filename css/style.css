@@ -35,6 +35,8 @@ img.box {
     -webkit-transform: translate(26%, 118%);
             transform: translate(26%, 118%);
     z-index: 1;
+    -webkit-transition: .3;
+    transition: .3;
   }
 }
 
