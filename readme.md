@@ -11,6 +11,11 @@ I've took challange from: https://www.frontendmentor.io/challenges/faq-accordion
 - SASS
 - Flexbox
 
+## Links
+
+- Solution URL: https://github.com/ersati/faq-card
+- Live Site URL: https://ersati.github.io/faq-card/
+
 #### Users should be able to:
 
 - View the optimal layout for the component depending on their device's screen size
@@ -20,8 +25,9 @@ I've took challange from: https://www.frontendmentor.io/challenges/faq-accordion
 ## Author
 
 Piotr Pacewicz
-Website:
-Frontend Mentor:
-Twitter:
-Github:
-LinkedIn:
+
+- Website: https://ersati.github.io/portfolio/index.html
+- Frontend Mentor:
+- Twitter: @mrtrifler
+- Github: https://github.com/ersati
+- LinkedIn: https://www.linkedin.com/in/piotr-pacewicz-59544516b/
